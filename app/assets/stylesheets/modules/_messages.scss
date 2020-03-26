@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+@mixin messages() {
+  &__message{
+    padding-bottom: 46px;
+
+    &__info{
+    margin-bottom: 12px;
+    display: flex;
+
+      &__talker{
+        color: #333333;
+        font-size: 16px;
+      }
+
+      &__date{
+        color: #999999;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+    
+    &__text{
+      color: #434A54;
+      font-size: 14px;
+    }
+  }
+  
+}
