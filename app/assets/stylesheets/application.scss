@@ -1,8 +1,11 @@
 @import "reset";
+@import "config/colors";
 @import "modules/messages";
 @import "modules/variable";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "modules/user";
+@import "modules/flash";
 @import "wrapper";
 @import "main_chat";
 @import "side_bar";
