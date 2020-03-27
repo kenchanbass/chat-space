@@ -13,11 +13,11 @@
             = icon('fa fa-cog', class: "icon")
 
   .side__groups
-    .side__groups__group
-      - current_user.groups.each do |group|
-        = link_to "#" do
+    - current_user.groups.each do |group|
+      .side__groups__group
+        = link_to group_messages_path(group) do
           .side__groups__group--name
             = group.name
           .side__groups__group--messages
-            まだメッセージはありません
+            =group.show_last_message
 
